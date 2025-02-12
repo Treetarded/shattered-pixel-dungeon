@@ -75,6 +75,9 @@ import com.shatteredpixel.shatteredpixeldungeon.journal.Catalog;
 import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
 import com.watabou.utils.DeviceCompat;
 
+import com.shatteredpixel.shatteredpixeldungeon.plants.Plant;
+import com.zrp200.scrollofdebug.ScrollOfDebug;
+import com.shatteredpixel.shatteredpixeldungeon.plants.Aliveplant;
 public enum HeroClass {
 
 	WARRIOR( HeroSubClass.BERSERKER, HeroSubClass.GLADIATOR ),
@@ -105,6 +108,12 @@ public enum HeroClass {
 
 		Waterskin waterskin = new Waterskin();
 		waterskin.collect();
+
+		Plant.Seed nut = new Aliveplant.Seed();
+		nut.collect();
+
+		ScrollOfDebug sod = new ScrollOfDebug();
+		sod.collect();
 
 		new ScrollOfIdentify().identify();
 
